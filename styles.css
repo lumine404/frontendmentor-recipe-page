@@ -1,0 +1,15 @@
+:root {
+    --bg-color: hsl(30, 54%, 90%);
+    --primary-color: hsl(30, 10%, 34%);
+    --accent-color: hsl(24, 20%, 54%);
+    --heading-color: hsl(14, 45%, 36%);
+    --h1-color: hsl(24, 5%, 18%);
+    --text-color: hsl(30, 10%, 34%);
+    
+    --font-size: 16px;
+}
+
+
+body {
+    
+}
