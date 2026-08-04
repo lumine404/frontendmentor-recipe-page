@@ -20,23 +20,26 @@
 
 
 body {
-    background-color: var(--bg-color);
-    font-family: 'Outfit';
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
     color: var(--text-color);
-    
+    background-color: var(--bg-color);
 }
 
 main {
-    
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    padding: 6rem 2rem;
 }
 
 .card {
+    width: 100%;
+    max-width: 700px;
+    padding: 2rem;
     background-color: var(--card-color);
+    border-radius: 12px;
 }
+
 .card img {
     width: 100%;
     border-radius: 10px;
@@ -45,11 +48,17 @@ main {
 .card h1 {
     font-family: 'Young serif';
     color: var(--h1-color);
-    font-weight: 400;
+    font-weight: 700;
 }
 .card h2 {
     color: var(--heading-color);
     font-family: 'Young serif';
+    font-weight: 600;
+}
+
+.card li::marker {
+    color: var(--heading-color);
+    font-weight: 700;
 }
 
 .note {
@@ -64,11 +73,32 @@ main {
 .note li {
     margin: 10px;
 }
+.note li::marker{
+    color:hsl(332, 51%, 32%);
+}
 
 .ingredients li {
-    padding: 8px;
+    padding: 5px;
 }
 
 .instructions li{
     padding: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 1rem 2rem;
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+td:last-child {
+    color: var(--heading-color);
+    font-weight: 700;
 }
