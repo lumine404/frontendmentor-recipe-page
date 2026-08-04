@@ -1,15 +1,74 @@
 :root {
     --bg-color: hsl(30, 54%, 90%);
+    --card-color: hsl(0, 0%, 100%);
     --primary-color: hsl(30, 10%, 34%);
     --accent-color: hsl(24, 20%, 54%);
     --heading-color: hsl(14, 45%, 36%);
     --h1-color: hsl(24, 5%, 18%);
     --text-color: hsl(30, 10%, 34%);
-    
+
+
     --font-size: 16px;
+}
+
+@font-face {
+    font-family: 'Young serif';
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+    font-family: 'Outfit';
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
 }
 
 
 body {
+    background-color: var(--bg-color);
+    font-family: 'Outfit';
+    color: var(--text-color);
     
+}
+
+main {
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--card-color);
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    
+}
+.card h1 {
+    font-family: 'Young serif';
+    color: var(--h1-color);
+    font-weight: 400;
+}
+.card h2 {
+    color: var(--heading-color);
+    font-family: 'Young serif';
+}
+
+.note {
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+.note h3 {
+    color: hsl(332, 51%, 32%);
+}
+.note li {
+    margin: 10px;
+}
+
+.ingredients li {
+    padding: 8px;
+}
+
+.instructions li{
+    padding: 5px;
 }
