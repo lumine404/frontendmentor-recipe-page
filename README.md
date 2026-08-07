@@ -1,4 +1,4 @@
-# Frontend Mentor - [Challenge Name] Solution
+# Frontend Mentor - Recipe page Solution
 
 This is my solution to the **Recipe Page ** challenge on Frontend Mentor. The goal of this project was to recreate the provided design using semantic HTML and CSS while building a responsive and accessible layout.
 
